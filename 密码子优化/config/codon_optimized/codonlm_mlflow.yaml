@@ -1,0 +1,64 @@
+
+# output_dir: /user/liufuxu/project/zBioSynth/output/codonopt/lm
+output_dir: output/codonopt/lm
+
+
+dataset:
+  class: codon_optimized
+  # path: /share/liufuxu/zBioSynth/dataset/codon_optimized/train.csv
+  path: codon_optimized.csv
+  fold: 0
+  feat_type: language_model
+  data_name: prot_seq
+  label_name: dna_seq
+  max_length: null
+  lm_model_name: codonlm_8m
+  padding_mode: max_length
+
+task:
+  class: CodonOptimization
+  criterion: ce
+  metric: [ "ce" ]
+  normalization: False
+  num_mlp_layer: 2
+  num_class: 69
+  mlp_batch_norm: False
+  mlp_dropout: 0.4
+  verbose: 0
+  model:
+    class: CodonOptModel
+    model_name: codonlm_8m
+    model_path: /share/liufuxu/zBioSynth/resources/pretrained_weights
+
+eval:
+  do_eval: True
+  eval_epochs: 1
+  eval_metric: [ "ce" ]
+  metric_mode: min
+
+optimizer:
+  class: Adam
+  lr: 3.0e-4
+
+engine:
+  gpus: [0]
+  batch_size: 4
+  gradient_interval: 1
+  num_worker: 8
+  log_interval: 1000
+  
+collate_fn: codon_optimized_data_collate
+
+lr_scheduler:
+  name: linear
+  num_warmup_epochs: 1
+  num_epochs: 1
+  # num_warmup_epochs: 5
+  # num_epochs: 40
+
+mlflow:
+  EXPERIMENT: CodonOpt-LM
+  TRACKING_URI: /user/liufuxu/project/zBioSynth/mlruns
+  EXPERIMENT_NAME: codon_optimized
+  EXPERIMENT_ID: 7          ## the id of the this experiment
+  RUN_NAME: codonlm   ## the name of the this run

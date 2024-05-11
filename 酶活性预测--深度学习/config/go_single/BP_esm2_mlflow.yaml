@@ -1,0 +1,73 @@
+
+# output_dir: /user/liufuxu/project/zBioSynth/output/soluprot/proteincnn1d
+output_dir: output/go/lm
+
+
+dataset:
+  class: protein_go_single
+  # path: /share/liufuxu/zBioSynth/dataset/promoter/promoter.csv
+  path: GO_BP.csv
+  # path: GO_MF.csv
+  # path: GO_CC.csv
+  fold: 0
+  feat_type: language_model
+  data_name: seq
+  label_name: BP
+  task: BP
+  max_length: null
+  lm_model_name: esm2_150m
+  padding_mode: max_length
+
+task:
+  class: ProteinGOSinglePrediction
+  criterion: bce
+  metric: [ "bce", "fmax"]
+  normalization: False
+  num_mlp_layer: 2
+  num_class: 4782
+  # bp_num_class: 4782
+  # mf_num_class: 791
+  # cc_num_class: 670
+  mlp_batch_norm: False
+  mlp_dropout: 0.4
+  verbose: 0
+  model:
+    class: Esm2Model
+    model_name: esm2_150m
+    model_path: /share/liufuxu/zBioSynth/resources/pretrained_weights
+
+eval:
+  do_eval: True
+  eval_epochs: 1
+  eval_metric: [ "fmax" ]
+  metric_mode: max
+  best_threshold: 0.5
+
+
+
+optimizer:
+  class: Adam
+  lr: 3.0e-4
+
+engine:
+  gpus: [0]
+  batch_size: 8
+  gradient_interval: 1
+  num_worker: 4
+  log_interval: 100
+  
+collate_fn: go_single_data_collate
+
+lr_scheduler:
+  name: linear
+  num_warmup_epochs: 1
+  num_epochs: 10
+  # num_warmup_epochs: 5
+  # num_epochs: 40
+
+mlflow:
+  EXPERIMENT: GO-LM
+  TRACKING_URI: /user/liufuxu/project/zBioSynth/mlruns
+  EXPERIMENT_NAME: GO
+  EXPERIMENT_ID: 11          ## the id of the this experiment
+  RUN_NAME: PROTLM   ## the name of the this run

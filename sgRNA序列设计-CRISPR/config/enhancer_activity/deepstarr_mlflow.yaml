@@ -1,0 +1,68 @@
+
+output_dir: /user/liufuxu/project/zBioSynth/output/enhancer_activity/Deepstarr
+# output_dir: output/enhancer_activity/Deepstarr
+
+dataset:
+  class: Enhancer_Activity
+  path: /share/liufuxu/zBioSynth/dataset/enhancer_activity/rice_enhancer.csv
+  # path: /share/liufuxu/zBioSynth/dataset/enhancer_activity/mel_enhancer.csv
+  # path: rice_enhancer.csv
+  fold: 0
+  feat_type: onehot
+  data_name: seq
+  label_name: activity
+  # label_name: Dev
+  max_length: 512
+  # transform:
+  #   max_length: 512
+  #   random: False
+
+task:
+  class: EnhancerActivityPrediction
+  criterion: mse
+  metric: [ "pearsonr", "mse" ]
+  num_mlp_layer: 2
+  normalization: False
+  num_class: 1
+  mlp_batch_norm: False
+  mlp_dropout: 0.4
+  verbose: 0
+  model:
+    class: Deepstarr
+    input_dim: 4
+    hidden_dims: [256, 60, 60, 120]
+    kernel_sizes: [ 7, 3, 5, 3 ]
+    output_dim: 1800
+    activation: 'relu'
+
+eval:
+  do_eval: True
+  eval_epochs: 1
+  eval_metric: [ "pearsonr" ]
+
+optimizer:
+  class: Adam
+  lr: 3.0e-4
+
+engine:
+  gpus: [0]
+  batch_size: 128
+  gradient_interval: 1
+  num_worker: 4
+  log_interval: 1000
+
+collate_fn: onehot_data_collate
+
+lr_scheduler:
+  name: linear
+  num_warmup_epochs: 1
+  num_epochs: 1
+  # num_warmup_epochs: 5
+  # num_epochs: 40
+
+mlflow:
+  EXPERIMENT: Enhancer-Activity-Deepstarr
+  TRACKING_URI: /user/liufuxu/project/zBioSynth/mlruns
+  EXPERIMENT_NAME: Deepstarr
+  EXPERIMENT_ID: 6          ## the id of the this experiment
+  RUN_NAME: Deepstarr   ## the name of the this run

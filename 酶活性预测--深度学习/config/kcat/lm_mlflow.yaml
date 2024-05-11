@@ -1,0 +1,72 @@
+
+# output_dir: /user/liufuxu/project/zBioSynth/output/kcat/prot_mol_model
+output_dir: output/kcat/prot_mol_model
+
+
+dataset:
+  class: kcat
+  # path: /share/liufuxu/zBioSynth/dataset/kcat/train.csv
+  path: kcat.csv
+  fold: 0
+  feat_type: language_model
+  data_name: seq
+  label_name: kcat
+  max_length: null
+  prot_model_name: esm2_8m
+  mol_model_name: smole-bert
+  padding_mode: max_length
+  prot_model_path: null
+  mol_model_path: null
+
+
+collate_fn: protein_mol_collate
+
+task:
+  class: KcatPrediction
+  criterion: mse
+  # criterion: smooth_l1
+  metric: [ "pearsonr", "r2", "mse","rmse"]
+  num_mlp_layer: 2
+  normalization: False
+  num_class: 1
+  mlp_batch_norm: False
+  mlp_dropout: 0.0
+  verbose: 0
+  model:
+    class: ProtMolModel
+    prot_model_name: esm2_8m
+    mol_model_name: smole-bert
+    prot_model_path: /share/liufuxu/zBioSynth/resources/pretrained_weights
+    mol_model_path: /share/liufuxu/zBioSynth/resources/pretrained_weights
+    freeze_backbone: False
+
+eval:
+  do_eval: True
+  eval_epochs: 1
+  eval_metric: [ "pearsonr" ]
+  metric_mode: max
+
+optimizer:
+  class: Adam
+  lr: 3.0e-4
+
+engine:
+  gpus: [0]
+  batch_size: 1
+  gradient_interval: 1
+  num_worker: 4
+  log_interval: 1000
+  
+
+lr_scheduler:
+  name: linear
+  num_warmup_epochs: 1
+  # num_epochs: 5
+  num_epochs: 1
+
+mlflow:
+  EXPERIMENT: Kcat-LM
+  TRACKING_URI: /user/liufuxu/project/zBioSynth/mlruns
+  EXPERIMENT_NAME: Kcat
+  EXPERIMENT_ID: 5          ## the id of the this experiment
+  RUN_NAME: LM   ## the name of the this run

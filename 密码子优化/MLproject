@@ -1,0 +1,22 @@
+name: zbiosynth_codon
+conda_env: zbiosynth.yml
+entry_points:
+  main:
+    parameters:
+      # task: {type: str, default: "codon_optimization"}
+      gpus: {type: int, default: 1, min: 0, max: 8}
+      learning_rate: {type: float, default: 3.0e-4}
+      epochs: {type: int, default: 20}
+      batch_size: {type: int, default: 4}
+      data_name: {type: str, default: "codon_optimized.csv"}
+      embedding_model: {type: str, default: "codonlm_8m"}
+      freeze_backbone: {type: str, default: "False"}
+
+
+    command: "python submit_run.py --task  codon_optimization --gpus {gpus} --learning_rate {learning_rate} --epochs {epochs} --batch_size {batch_size} --data_name {data_name} --embedding_model {embedding_model} --freeze_backbone {freeze_backbone}"
+
+    # command: "python test_plat.py --task {task}"
+    # command: "python run_single_pltform_mlflow.py --task {task} --platform True"
+    # command: "python run_single_pltform.py --task {task}"
+    # command: "python run_single_pltform.py --config ./config/enhancer_activity/deepstarr.yaml"
+    # command: "python run_for_env.py"

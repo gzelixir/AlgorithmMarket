@@ -1,0 +1,52 @@
+
+output_dir: /user/liufuxu/project/zBioSynth/output/ddg/esm2ddg_model
+
+dataset:
+  class: protein_mutaiton_ddg
+  path: /share/liufuxu/zBioSynth/dataset/ddg/ddg.csv
+  fold: 0
+  feat_type: language_model
+  data_name: seq
+  label_name: ddG
+  max_length: null
+  lm_model_name: esm2_150m
+  padding_mode: max_length
+
+task:
+  class: ProteinMutationDdgPrediction
+  # criterion: mse
+  criterion: smooth_l1
+  metric: [ "pearsonr", "mse" ]
+  num_mlp_layer: 2
+  normalization: False
+  num_class: 1
+  mlp_batch_norm: False
+  mlp_dropout: 0.0
+  verbose: 0
+  model:
+    class: Esm2DDG_Model
+    model_name: esm2_150m
+    freeze_backbone: True
+
+eval:
+  do_eval: True
+  eval_epochs: 1
+  eval_metric: [ "pearsonr" ]
+
+optimizer:
+  class: Adam
+  lr: 3.0e-4
+
+engine:
+  gpus: [0,1,2,3,4,5,6,7]
+  batch_size: 1
+  gradient_interval: 1
+  num_worker: 4
+  log_interval: 99999999
+  
+collate_fn: emb_ddg_collate
+
+lr_scheduler:
+  name: GradualWarmupScheduler
+  num_warmup_epochs: 1
+  num_epochs: 10

@@ -1,0 +1,7 @@
+
+mlflow_running_path: /user/liufuxu/project/zBioSynth/mlruns/1/922e40ec56bd4eb98b27141240ad4b2d
+with_label: True
+file_path: /share/liufuxu/zBioSynth/dataset/soluprot/soluprot_test.csv
+postprocess: True
+eval: True
+

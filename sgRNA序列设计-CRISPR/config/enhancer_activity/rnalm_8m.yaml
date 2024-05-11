@@ -1,0 +1,52 @@
+
+output_dir: /user/liufuxu/project/zBioSynth/output/enhancer_activity/rnalm
+
+dataset:
+  class: Enhancer_Activity
+  # path: /share/liufuxu/zBioSynth/dataset/enhancer_activity/rice_enhancer.csv
+  path: /share/liufuxu/zBioSynth/dataset/enhancer_activity/mel_enhancer.csv
+  fold: 0
+  feat_type: language_model
+  data_name: seq
+  # label_name: activity
+  label_name: Dev
+  max_length: null
+  lm_model_name: rnalm_8m
+  padding_mode: max_length
+
+task:
+  class: EnhancerActivityPrediction
+  criterion: mse
+  metric: [ "pearsonr", "mse" ]
+  num_mlp_layer: 2
+  normalization: False
+  num_class: 1
+  mlp_batch_norm: True
+  mlp_dropout: 0.4
+  verbose: 0
+  model:
+    class: RNALM
+    model_name: rnalm_8m
+
+eval:
+  do_eval: True
+  eval_epochs: 1
+  eval_metric: [ "pearsonr" ]
+
+optimizer:
+  class: Adam
+  lr: 3.0e-4
+
+engine:
+  gpus: [0]
+  batch_size: 128
+  gradient_interval: 1
+  num_worker: 4
+  log_interval: 100
+  
+collate_fn: emb_data_collate
+
+lr_scheduler:
+  name: linear
+  num_warmup_epochs: 5
+  num_epochs: 40

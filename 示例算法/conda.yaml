@@ -1,0 +1,12 @@
+name: tutorial
+channels:
+  - defaults
+dependencies:
+  - numpy>=1.14.3
+  - pandas>=1.0.0
+  - scikit-learn>0.19.1
+  - python=3.9.16
+  - pip:
+    - pyarrow @ https://files.pythonhosted.org/packages/cd/8d/a7068195f2668fecbd31b144efe32f48953b876396cceb01c1cd2a0cefbc/pyarrow-11.0.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    - mlflow==2.3.1
+

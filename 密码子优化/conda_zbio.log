@@ -1,0 +1,1644 @@
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... 
+Warning: >10 possible package resolutions (only showing differing packages):
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/linux-64::openjpeg-2.4.0-h3ad879b_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::python-tzdata-2023.3-pyhd3eb1b0_0
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/linux-64::openjpeg-2.4.0-h3ad879b_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::python-tzdata-2023.3-pyhd3eb1b0_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/linux-64::openjpeg-2.4.0-h3ad879b_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::python-tzdata-2023.3-pyhd3eb1b0_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/linux-64::openjpeg-2.4.0-h3ad879b_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::python-tzdata-2023.3-pyhd3eb1b0_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::python-tzdata-2023.3-pyhd3eb1b0_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/linux-64::openjpeg-2.4.0-h3ad879b_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::python-tzdata-2023.3-pyhd3eb1b0_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/linux-64::openjpeg-2.4.0-h3ad879b_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::python-tzdata-2023.3-pyhd3eb1b0_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/linux-64::openjpeg-2.4.0-h3ad879b_0
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::python-tzdata-2023.3-pyhd3eb1b0_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/linux-64::openjpeg-2.4.0-h3ad879b_0
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/linux-64::openjpeg-2.4.0-h3ad879b_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/noarch::python-tzdata-2023.3-pyhd3eb1b0_0
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/linux-64::openjpeg-2.4.0-h3ad879b_0, https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0, https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/noarch::python-tzdata-2023.3-pyhd3eb1b0_0
+  ... and othersdone
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.1.0
+  latest version: 23.11.0
+
+Please update conda by running
+
+    $ conda update -n base -c conda-forge conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=23.11.0
+
+
+
+Downloading and Extracting Packages
+icu-68.1             | 11.8 MB   |            |   0% 
+brotli-1.0.9         | 18 KB     |            |   0% [A
+
+brotli-bin-1.0.9     | 19 KB     |            |   0% [A[A
+
+
+openssl-1.1.1u       | 3.7 MB    |            |   0% [A[A[A
+
+
+
+tk-8.6.12            | 3.0 MB    |            |   0% [A[A[A[A
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    |            |   0% [A[A[A[A[A
+
+
+
+
+
+kiwisolver-1.4.4     | 76 KB     |            |   0% [A[A[A[A[A[A
+
+
+
+
+
+
+ld_impl_linux-64-2.3 | 654 KB    |            |   0% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+lz4-c-1.9.4          | 154 KB    |            |   0% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+libbrotlidec-1.0.9   | 31 KB     |            |   0% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+mkl_fft-1.3.8        | 216 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+pillow-10.0.1        | 745 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.2.13          | 103 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+libdeflate-1.17      | 64 KB     |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+fontconfig-2.13.1    | 250 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libiconv-1.16        | 736 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+readline-8.2         | 357 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+blas-1.0             | 6 KB      |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lcms2-2.12           | 312 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+brotli-1.0.9         | 18 KB     | ########6  |  87% [A
+
+
+openssl-1.1.1u       | 3.7 MB    |            |   0% [A[A[A
+
+
+
+tk-8.6.12            | 3.0 MB    |            |   1% [A[A[A[Aicu-68.1             | 11.8 MB   |            |   0% 
+
+brotli-bin-1.0.9     | 19 KB     | ########5  |  86% [A[A
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    |            |   0% [A[A[A[A[A
+
+
+
+
+
+kiwisolver-1.4.4     | 76 KB     | ##         |  21% [A[A[A[A[A[A
+
+
+
+tk-8.6.12            | 3.0 MB    | #6         |  16% [A[A[A[A
+
+
+openssl-1.1.1u       | 3.7 MB    | #3         |  14% [A[A[Aicu-68.1             | 11.8 MB   | 3          |   3% 
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | 1          |   2% [A[A[A[A[A
+
+
+
+tk-8.6.12            | 3.0 MB    | ###        |  30% [A[A[A[A
+
+
+openssl-1.1.1u       | 3.7 MB    | ##6        |  27% [A[A[A
+
+
+openssl-1.1.1u       | 3.7 MB    | ###6       |  37% [A[A[A
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | 2          |   3% [A[A[A[A[Aicu-68.1             | 11.8 MB   | 4          |   5% 
+
+
+
+tk-8.6.12            | 3.0 MB    | ####2      |  42% [A[A[A[A
+
+
+openssl-1.1.1u       | 3.7 MB    | ######4    |  64% [A[A[A
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | 4          |   4% [A[A[A[A[Aicu-68.1             | 11.8 MB   | #1         |  12% 
+
+
+
+tk-8.6.12            | 3.0 MB    | #######2   |  72% [A[A[A[Aicu-68.1             | 11.8 MB   | #4         |  15% 
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | 6          |   7% [A[A[A[A[A
+
+
+openssl-1.1.1u       | 3.7 MB    | #######8   |  79% [A[A[A
+
+
+
+
+
+
+ld_impl_linux-64-2.3 | 654 KB    | 2          |   2% [A[A[A[A[A[A[A
+
+
+
+tk-8.6.12            | 3.0 MB    | ########8  |  89% [A[A[A[Aicu-68.1             | 11.8 MB   | #7         |  18% 
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | #          |  10% [A[A[A[A[A
+
+
+openssl-1.1.1u       | 3.7 MB    | #########2 |  92% [A[A[A
+
+
+
+
+
+
+ld_impl_linux-64-2.3 | 654 KB    | #9         |  20% [A[A[A[A[A[A[A
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | #2         |  12% [A[A[A[A[Aicu-68.1             | 11.8 MB   | ##         |  20% 
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | #7         |  18% [A[A[A[A[Aicu-68.1             | 11.8 MB   | ##8        |  29% 
+
+
+
+
+
+
+
+lz4-c-1.9.4          | 154 KB    | #          |  10% [A[A[A[A[A[A[A[Aicu-68.1             | 11.8 MB   | ###9       |  39% 
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | ##6        |  26% [A[A[A[A[A
+
+
+
+
+
+
+
+
+
+mkl_fft-1.3.8        | 216 KB    | 7          |   7% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+libbrotlidec-1.0.9   | 31 KB     | #####1     |  51% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+pillow-10.0.1        | 745 KB    | 2          |   2% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.2.13          | 103 KB    | #5         |  15% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | ##9        |  30% [A[A[A[A[Aicu-68.1             | 11.8 MB   | ####4      |  44% 
+
+
+
+
+
+
+
+
+
+
+
+
+libdeflate-1.17      | 64 KB     | ##4        |  25% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+pillow-10.0.1        | 745 KB    | ######8    |  69% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | ###3       |  34% [A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libiconv-1.16        | 736 KB    | 2          |   2% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+fontconfig-2.13.1    | 250 KB    | 6          |   6% [A[A[A[A[A[A[A[A[A[A[A[A[A[Aicu-68.1             | 11.8 MB   | ####8      |  49% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libiconv-1.16        | 736 KB    | #7         |  17% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | ###7       |  37% [A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+readline-8.2         | 357 KB    | 4          |   4% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+blas-1.0             | 6 KB      | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Aicu-68.1             | 11.8 MB   | ######2    |  63% 
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | ####8      |  49% [A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lcms2-2.12           | 312 KB    | 5          |   5% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | #####4     |  54% [A[A[A[A[Aicu-68.1             | 11.8 MB   | ######9    |  70% 
+brotli-1.0.9         | 18 KB     | ########## | 100% [A
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | #####9     |  59% [A[A[A[A[A
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | ######3    |  63% [A[A[A[A[Aicu-68.1             | 11.8 MB   | #######5   |  76% icu-68.1             | 11.8 MB   | ########1  |  82% 
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | ######6    |  67% [A[A[A[A[A
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | #######    |  71% [A[A[A[A[Aicu-68.1             | 11.8 MB   | ########5  |  86% 
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | #######3   |  73% [A[A[A[A[Aicu-68.1             | 11.8 MB   | ########9  |  89% 
+
+brotli-bin-1.0.9     | 19 KB     | ########## | 100% [A[A
+
+
+
+
+
+kiwisolver-1.4.4     | 76 KB     | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+kiwisolver-1.4.4     | 76 KB     | ########## | 100% [A[A[A[A[A[A
+
+
+openssl-1.1.1u       | 3.7 MB    | ########## | 100% [A[A[A
+
+
+
+
+
+
+ld_impl_linux-64-2.3 | 654 KB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+ld_impl_linux-64-2.3 | 654 KB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+tk-8.6.12            | 3.0 MB    | ########## | 100% [A[A[A[A
+
+
+
+
+
+
+
+lz4-c-1.9.4          | 154 KB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+lz4-c-1.9.4          | 154 KB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+libbrotlidec-1.0.9   | 31 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+libbrotlidec-1.0.9   | 31 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+mkl_fft-1.3.8        | 216 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+mkl_fft-1.3.8        | 216 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.2.13          | 103 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.2.13          | 103 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+libdeflate-1.17      | 64 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+libdeflate-1.17      | 64 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+pillow-10.0.1        | 745 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+pillow-10.0.1        | 745 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+fontconfig-2.13.1    | 250 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+fontconfig-2.13.1    | 250 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libiconv-1.16        | 736 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libiconv-1.16        | 736 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+blas-1.0             | 6 KB      | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+readline-8.2         | 357 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+readline-8.2         | 357 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lcms2-2.12           | 312 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lcms2-2.12           | 312 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Aicu-68.1             | 11.8 MB   | ########## | 100% icu-68.1             | 11.8 MB   | ########## | 100% 
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | ########## | 100% [A[A[A[A[A
+
+
+
+
+numpy-base-1.26.2    | 7.1 MB    | ########## | 100% [A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A                                                     
+                                                     [A
+
+                                                     [A[A
+
+
+                                                     [A[A[A
+
+
+
+                                                     [A[A[A[A
+
+
+
+
+                                                     [A[A[A[A[A
+
+
+
+
+
+                                                     [A[A[A[A[A[A
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A
+
+[A[A
+
+
+[A[A[A
+
+
+
+[A[A[A[A
+
+
+
+
+[A[A[A[A[A
+
+
+
+
+
+[A[A[A[A[A[A
+
+
+
+
+
+
+[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A
+
+[A[A
+
+
+[A[A[A
+
+
+
+[A[A[A[A
+
+
+
+
+[A[A[A[A[A
+
+
+
+
+
+[A[A[A[A[A[A
+
+
+
+
+
+
+[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A
+
+[A[A
+
+
+[A[A[A
+
+
+
+[A[A[A[A
+
+
+
+
+[A[A[A[A[A
+
+
+
+
+
+[A[A[A[A[A[A
+
+
+
+
+
+
+[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+[A[A[A[A[A[A[A[A
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+Installing pip dependencies: ...working... Pip subprocess error:
+ERROR: Could not install packages due to an OSError: [Errno 28] No space left on device
+
+
+Ran pip subprocess with arguments:
+['/user/mahaohui/miniconda3/envs/zbio/bin/python', '-m', 'pip', 'install', '-U', '-r', '/user/mahaohui/open_market_algrothim/z-bio-synth_codon_optimization/condaenv.x8uf73wj.requirements.txt', '--exists-action=b']
+Pip subprocess output:
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple, https://pypi.ngc.nvidia.com
+Collecting torch==1.13.1+cu116
+  Downloading https://download.pytorch.org/whl/cu116/torch-1.13.1%2Bcu116-cp39-cp39-linux_x86_64.whl (1977.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 GB 9.7 MB/s eta 0:00:00
+Collecting torchvision==0.14.1+cu116
+  Downloading https://download.pytorch.org/whl/cu116/torchvision-0.14.1%2Bcu116-cp39-cp39-linux_x86_64.whl (24.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.2/24.2 MB 12.0 MB/s eta 0:00:00
+Collecting torch-scatter==2.1.1+pt113cu116
+  Downloading https://data.pyg.org/whl/torch-1.13.0%2Bcu116/torch_scatter-2.1.1%2Bpt113cu116-cp39-cp39-linux_x86_64.whl (9.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.4/9.4 MB 5.2 MB/s eta 0:00:00
+Collecting torch-cluster==1.6.1+pt113cu116
+  Downloading https://data.pyg.org/whl/torch-1.13.0%2Bcu116/torch_cluster-1.6.1%2Bpt113cu116-cp39-cp39-linux_x86_64.whl (3.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 4.9 MB/s eta 0:00:00
+Collecting absl-py==1.4.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/dd/87/de5c32fa1b1c6c3305d576e299801d8655c175ca9557019906247b994331/absl_py-1.4.0-py3-none-any.whl (126 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.5/126.5 kB 962.0 kB/s eta 0:00:00
+Collecting torchmetrics==0.8.2
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5b/bd/4d55ca67c0dfc79b882fd5175da35f9cee359a173776c85f1ecadb7e9d84/torchmetrics-0.8.2-py3-none-any.whl (409 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 409.8/409.8 kB 2.4 MB/s eta 0:00:00
+Collecting accelerate==0.16.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/dc/0c/f95215bc5f65e0a5fb97d4febce7c18420002a4c3ea5182294dc576f17fb/accelerate-0.16.0-py3-none-any.whl (199 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.7/199.7 kB 3.1 MB/s eta 0:00:00
+Collecting aiohttp==3.8.4
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/8b/60/91ef15bf94415c6749edb6fd168394c1f451e7bb4b3f32c023654e8ea91e/aiohttp-3.8.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 4.1 MB/s eta 0:00:00
+Collecting aiosignal==1.3.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/76/ac/a7305707cb852b7e16ff80eaf5692309bde30e2b1100a1fcacdc8f731d97/aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+Collecting alembic==1.10.4
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/83/64/3d091f50da38aca0774e30053db2bd3483ba6358674a60d82fd6dd6248b6/alembic-1.10.4-py3-none-any.whl (212 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 212.9/212.9 kB 5.4 MB/s eta 0:00:00
+Collecting antlr4-python3-runtime==4.9.3
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3e/38/7859ff46355f76f8d19459005ca000b6e7012f2f1ca597746cbcd1fbfe5e/antlr4-python3-runtime-4.9.3.tar.gz (117 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.0/117.0 kB 5.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting async-timeout==4.0.2
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d6/c1/8991e7c5385b897b8c020cdaad718c5b087a6626d1d11a23e1ea87e325a7/async_timeout-4.0.2-py3-none-any.whl (5.8 kB)
+Collecting attrs==23.1.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f0/eb/fcb708c7bf5056045e9e98f62b93bd7467eb718b0202e7698eb11d66416c/attrs-23.1.0-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 7.0 MB/s eta 0:00:00
+Collecting autogluon==0.7.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d7/0d/8a748a529ec0deca693234a948c8e7cff3f3f1ebeb2d5bccc8f330be00da/autogluon-0.7.0-py3-none-any.whl (9.7 kB)
+Collecting autogluon-common==0.7.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/82/c4/91beb10ae79a4e20917f8c05ea49bf3e8ac344efa9fa4581edac5586f062/autogluon.common-0.7.0-py3-none-any.whl (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.0/45.0 kB 11.8 MB/s eta 0:00:00
+Collecting autogluon-core==0.7.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/94/7e/189df90f1c8287325e14655911c2e98f0f04eb9ca960f15665af84722ec1/autogluon.core-0.7.0-py3-none-any.whl (218 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 218.3/218.3 kB 5.4 MB/s eta 0:00:00
+Collecting autogluon-features==0.7.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3a/d7/fd1e6c37249a43299bf4eea6ec7482debe736045246b76466c3072d960c1/autogluon.features-0.7.0-py3-none-any.whl (60 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.1/60.1 kB 7.8 MB/s eta 0:00:00
+Collecting autogluon-multimodal==0.7.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5a/be/2e2c29811c1ef265d50cd571b93ca2c0d1314dc6ebf42b50875a81a90e0c/autogluon.multimodal-0.7.0-py3-none-any.whl (331 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 331.1/331.1 kB 5.5 MB/s eta 0:00:00
+Collecting autogluon-tabular==0.7.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/81/3e/59c74cb2d2978baacb0975c889230f156e07ea92aceb1f2154eb436d7a4b/autogluon.tabular-0.7.0-py3-none-any.whl (292 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 292.2/292.2 kB 5.5 MB/s eta 0:00:00
+Collecting autogluon-timeseries==0.7.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5e/a4/abf483d6f5ea62fbbf8a780b19ac28b5343ff84b99609676658f8103560f/autogluon.timeseries-0.7.0-py3-none-any.whl (108 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 108.7/108.7 kB 6.3 MB/s eta 0:00:00
+Collecting beautifulsoup4==4.12.2
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/57/f4/a69c20ee4f660081a7dedb1ac57f29be9378e04edfcb90c526b923d4bebc/beautifulsoup4-4.12.2-py3-none-any.whl (142 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 143.0/143.0 kB 5.8 MB/s eta 0:00:00
+Collecting blinker==1.6.2
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/0d/f1/5f39e771cd730d347539bb74c6d496737b9d5f0a53bc9fdbf3e170f1ee48/blinker-1.6.2-py3-none-any.whl (13 kB)
+Collecting blis==0.7.9
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/28/b6/e1cdfcf4ada40bef7c0511576231df20ac94a15baeb7ceaab2a180463268/blis-0.7.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.2/10.2 MB 10.5 MB/s eta 0:00:00
+Collecting boto3==1.26.119
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7e/b8/69413fb3371f5333a9a086a24ddcffa9ac93a08a029073719fa5d08fcbc5/boto3-1.26.119-py3-none-any.whl (135 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.6/135.6 kB 17.4 MB/s eta 0:00:00
+Collecting botocore==1.29.119
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/cf/80/978403732c2066a3fdc65a3019ee29c2b27c940f5886d0ee5cecae326f05/botocore-1.29.119-py3-none-any.whl (10.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.7/10.7 MB 11.6 MB/s eta 0:00:00
+Collecting cachetools==5.3.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/db/14/2b48a834d349eee94677e8702ea2ef98b7c674b090153ea8d3f6a788584e/cachetools-5.3.0-py3-none-any.whl (9.3 kB)
+Collecting catalogue==2.0.8
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/dc/28/a2b0cc4bfa7916ef9caf08475be5810fc564411c5a801f225a1f40a458c5/catalogue-2.0.8-py3-none-any.whl (17 kB)
+Collecting catboost==1.1.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ce/6a/fe4016a0bec3253c0fb3b27e77e3849c1f327c7b8a246e8946a7525bcc39/catboost-1.1.1-cp39-none-manylinux1_x86_64.whl (76.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.6/76.6 MB 11.8 MB/s eta 0:00:00
+Collecting certifi==2022.12.7
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/71/4c/3db2b8021bd6f2f0ceb0e088d6b2d49147671f25832fb17970e9b583d742/certifi-2022.12.7-py3-none-any.whl (155 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.3/155.3 kB 14.7 MB/s eta 0:00:00
+Collecting charset-normalizer==3.1.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/33/97/9967fb2d364a9da38557e4af323abcd58cc05bdd8f77e9fd5ae4882772cc/charset_normalizer-3.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (199 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.2/199.2 kB 13.8 MB/s eta 0:00:00
+Collecting click==8.1.3
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c2/f1/df59e28c642d583f7dacffb1e0965d0e00b218e0186d7858ac5233dce840/click-8.1.3-py3-none-any.whl (96 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.6/96.6 kB 20.0 MB/s eta 0:00:00
+Collecting cloudpickle==2.2.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/15/80/44286939ca215e88fa827b2aeb6fa3fd2b4a7af322485c7170d6f9fd96e0/cloudpickle-2.2.1-py3-none-any.whl (25 kB)
+Collecting colorama==0.4.6
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting confection==0.0.4
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b1/c4/07291f4947d20f545eee76ef20d1eacfb1f80d1d6ab4792bfa6797e0578c/confection-0.0.4-py3-none-any.whl (32 kB)
+Collecting contourpy==1.0.7
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c7/97/ba9ace011734cd01b63eb7d39b2cf97afbfa985b0239ab0db85bafa9b207/contourpy-1.0.7-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (299 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 299.7/299.7 kB 13.6 MB/s eta 0:00:00
+Requirement already satisfied: cycler==0.11.0 in /user/mahaohui/miniconda3/envs/zbio/lib/python3.9/site-packages (from -r /user/mahaohui/open_market_algrothim/z-bio-synth_codon_optimization/condaenv.x8uf73wj.requirements.txt (line 36)) (0.11.0)
+Collecting cymem==2.0.7
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b1/62/c615d7ff20647b1c568eac00a94df1e88e7c379646659eb0be6e346cadfe/cymem-2.0.7-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (35 kB)
+Collecting cython==0.29.34
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2f/6d/7dc0e08b5305ffb790043535460c2bf2e1d2a74e46e1e284d0886c6cb0ed/Cython-0.29.34-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (2.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 12.4 MB/s eta 0:00:00
+Collecting databricks-cli==0.17.7
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/73/22/274c985aaea6617ece986c8c7d458543758a0e28f53ab9f41174ba381f59/databricks-cli-0.17.7.tar.gz (83 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.5/83.5 kB 25.5 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting datasets==2.11.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/48/b7/6190994c06fb2cee1ff25c4326312a5c38c20e721424c332195f65af5190/datasets-2.11.0-py3-none-any.whl (468 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 468.7/468.7 kB 13.6 MB/s eta 0:00:00
+Collecting defusedxml==0.7.1
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/07/6c/aa3f2f849e01cb6a001cd8554a88d4c77c5c1a31c95bdf1cf9301e6d9ef4/defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Collecting deprecated==1.2.13
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/51/6a/c3a0408646408f7283b7bc550c30a32cc791181ec4618592eec13e066ce3/Deprecated-1.2.13-py2.py3-none-any.whl (9.6 kB)
+Collecting dill==0.3.6
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/be/e3/a84bf2e561beed15813080d693b4b27573262433fced9c1d1fea59e60553/dill-0.3.6-py3-none-any.whl (110 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.5/110.5 kB 19.9 MB/s eta 0:00:00
+Collecting distlib==0.3.6
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/76/cb/6bbd2b10170ed991cf64e8c8b85e01f2fb38f95d1bc77617569e0b0b26ac/distlib-0.3.6-py2.py3-none-any.whl (468 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 468.5/468.5 kB 13.6 MB/s eta 0:00:00
+Collecting docker==6.1.2
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/32/a3/9ae84296a1a66fd62d120105edd515796369dfc30dd92eeae00fb1b2f54c/docker-6.1.2-py3-none-any.whl (148 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 148.1/148.1 kB 16.8 MB/s eta 0:00:00
+Collecting evaluate==0.3.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/53/1e/9390692b3583467d13caad4caf10f379d23e40314091f9e7018fbfd07126/evaluate-0.3.0-py3-none-any.whl (72 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.9/72.9 kB 23.4 MB/s eta 0:00:00
+Collecting fair-esm==2.0.0
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/79/26/1cc82571f507b9dae3b36d4242764edc6e4ae9f3f81f44a6382c15fad565/fair_esm-2.0.0-py3-none-any.whl (93 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 93.1/93.1 kB 6.4 MB/s eta 0:00:00
+Collecting fairscale==0.4.13
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c1/08/b3334d7b543ac10dcb129cef4f84723ab696725512f18d69ab3a784b0bf5/fairscale-0.4.13.tar.gz (266 kB)
+     ━━━━━╸                                  41.0/266.3 kB 42.2 kB/s eta 0:00:06
+
+failed
+
+CondaEnvException: Pip failed
+

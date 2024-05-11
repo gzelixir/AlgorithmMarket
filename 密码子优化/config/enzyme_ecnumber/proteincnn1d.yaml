@@ -1,0 +1,64 @@
+
+output_dir: /user/liufuxu/project/zBioSynth/output/enzyme_ecnumber/proteincnn1d
+
+dataset:
+  class: enzyme_ecnumber
+  # path: /share/liufuxu/zBioSynth/dataset/ecnumber/EnzymeCommission/nrPDB-EC.csv
+  # path: /share/liufuxu/zBioSynth/dataset/ecnumber/uniprot_ec/uniprot_ec_reviewed.csv
+  path: /share/liufuxu/zBioSynth/dataset/ecnumber/uniprot_ec/uniprot_ec_4m.csv
+  fold: 0
+  feat_type: onehot
+  # data_name: seq
+  data_name: Sequence
+  label_name: label
+  max_length: 512
+  # transform:
+  #   max_length: 512
+  #   random: False
+
+task:
+  class: EnzymeECNumberPrediction
+  criterion: ce
+  metric: [ "ce", "acc", "precision"]
+  normalization: False
+  num_mlp_layer: 2
+  # num_class: 161
+  num_class: 8461
+  mlp_batch_norm: True
+  mlp_dropout: 0.4
+  verbose: 0
+  model:
+    class: ProteinCNN1D
+    input_dim: 21
+    hidden_dims: [64, 128, 256]
+    kernel_size: 3
+    stride: 1
+    padding: 1
+    activation: relu
+    short_cut: False
+    concat_hidden: False
+    pool: max
+
+eval:
+  do_eval: True
+  eval_epochs: 1
+  eval_metric: [ "acc" ]
+
+optimizer:
+  class: Adam
+  lr: 3.0e-4
+
+engine:
+  gpus: [0]
+  batch_size: 128
+  gradient_interval: 1
+  num_worker: 4
+  log_interval: 100
+  
+collate_fn: onehot_data_collate
+
+lr_scheduler:
+  name: linear
+  num_warmup_epochs: 5
+  # num_epochs: 100
+  num_epochs: 10

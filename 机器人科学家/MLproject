@@ -1,0 +1,12 @@
+name: physo2
+
+conda_env: physo2.yml
+
+entry_points:
+  main:
+    parameters:
+      data: { type: str, help: 'data parth', default : "mechanical1.csv"}
+    command: "python \
+    get_package.py \
+    --data {data} \
+    "

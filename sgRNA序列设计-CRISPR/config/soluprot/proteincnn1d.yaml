@@ -1,0 +1,62 @@
+
+output_dir: /user/liufuxu/project/zBioSynth/output/soluprot/proteincnn1d
+# output_dir: output/soluprot/proteincnn1d   ## platform
+
+
+dataset:
+  class: protein_solubility
+  path: /share/liufuxu/zBioSynth/dataset/soluprot/soluprot.csv
+  # path: soluprot.csv  ## platform
+  fold: 0
+  feat_type: onehot
+  data_name: seq
+  label_name: solubility
+  max_length: 512
+  # transform:
+  #   max_length: 512
+  #   random: False
+
+task:
+  class: ProteinSolubilityPrediction
+  criterion: bce
+  metric: [ "bce", "acc", "b_acc", "auroc", "mcc", "precision" ]
+  normalization: False
+  num_mlp_layer: 2
+  num_class: 1
+  mlp_batch_norm: True
+  mlp_dropout: 0.4
+  verbose: 0
+  model:
+    class: ProteinCNN1D
+    input_dim: 21
+    hidden_dims: [64, 128, 256]
+    kernel_size: 3
+    stride: 1
+    padding: 1
+    activation: relu
+    short_cut: False
+    concat_hidden: False
+    pool: max
+
+eval:
+  do_eval: True
+  eval_epochs: 1
+  eval_metric: [ "mcc" ]
+
+optimizer:
+  class: Adam
+  lr: 3.0e-4
+
+engine:
+  gpus: [0]
+  batch_size: 128
+  gradient_interval: 1
+  num_worker: 4
+  log_interval: 100
+  
+collate_fn: onehot_data_collate
+
+lr_scheduler:
+  name: linear
+  num_warmup_epochs: 5
+  num_epochs: 40

@@ -1,0 +1,71 @@
+
+# output_dir: /user/liufuxu/project/zBioSynth/output/enzyme_ecnumber/proteincnn1d
+output_dir: output/enzyme_ecnumber/proteincnn1d
+
+
+
+dataset:
+  class: enzyme_ecnumber
+  # path: /share/liufuxu/zBioSynth/dataset/ecnumber/EnzymeCommission/nrPDB-EC.csv
+  # path: /share/liufuxu/zBioSynth/dataset/ecnumber/uniprot_ec/uniprot_ec_reviewed.csv
+  # path: /share/liufuxu/zBioSynth/dataset/ecnumber/uniprot_ec/uniprot_ec_4m.csv
+  path: nrPDB-EC.csv
+  fold: 0
+  feat_type: language_model
+  data_name: seq
+  # data_name: Sequence
+  label_name: label
+  max_length:  1000
+  lm_model_name: esm2_8m
+  padding_mode: max_length
+
+
+task:
+  class: EnzymeECNumberPrediction
+  criterion: ce
+  metric: [ "ce", "acc", "precision"]
+  normalization: False
+  num_mlp_layer: 2
+  # num_class: 161
+  num_class: 8461
+  mlp_batch_norm: False
+  mlp_dropout: 0.4
+  verbose: 0
+  model:
+    class: Esm2Model
+    model_name: esm2_8m
+    model_path: /share/liufuxu/zBioSynth/resources/pretrained_weights
+
+
+eval:
+  do_eval: True
+  eval_epochs: 1
+  eval_metric: [ "acc" ]
+  metric_mode: max
+
+
+optimizer:
+  class: Adam
+  lr: 3.0e-4
+
+engine:
+  gpus: [0]
+  batch_size: 8
+  gradient_interval: 1
+  num_worker: 4
+  log_interval: 1000
+  
+collate_fn: emb_data_collate
+
+lr_scheduler:
+  name: linear
+  num_warmup_epochs: 5
+  # num_epochs: 10
+  num_epochs: 1
+
+mlflow:
+  EXPERIMENT: EC-ESM
+  TRACKING_URI: /user/liufuxu/project/zBioSynth/mlruns
+  EXPERIMENT_NAME: EC
+  EXPERIMENT_ID: 4          ## the id of the this experiment
+  RUN_NAME: ESM   ## the name of the this run
