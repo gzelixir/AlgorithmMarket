@@ -1,0 +1,21 @@
+name: tutorial
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      device : {type : str, default: 'cuda'} 
+      learning_rate : {type : float, default: 0.001} 
+      n_layer : {type : int, default: 3} 
+      n_head : {type : int, default: 4} 
+      n_embd : {type : int, default: 320} 
+      lr_decay_iters : {type : int, default: 5000} 
+      max_iters : {type : int, default: 5000} 
+      input_data : {type : str, default: 'input.txt'}
+      
+      
+    command: "python train.py config/train_tss50.py --device={device} --learning_rate={learning_rate} \
+    --n_layer={n_layer} --n_head={n_head} --n_embd={n_embd} --dtype='float32' --lr_decay_iters={lr_decay_iters} --max_iters={max_iters} --dataset='tss50' --input_data={input_data} "
+
+
